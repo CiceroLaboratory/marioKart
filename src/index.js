@@ -20,6 +20,6 @@ function rollDice(){
 }
 
 
-(async function main(){
-  console.log('hello')
+(async function main() {
+   console.log('hello')
 })()
