@@ -1,25 +1,33 @@
 const playerOne = {
-  NOME: "Mario",
-  VELOCIDADE: 4,
-  MANOBRABILIDADE: 3,
-  PODER: 3,
-  PONTOS: 0,
+  name: "Mario",
+  speed: 4,
+  maneuverability: 3,
+  power: 3,
+  score: 0,
 };
 
 const playerTwo = {
-  NOME: "Luigi",
-  VELOCIDADE: 3,
-  MANOBRABILIDADE: 4,
-  PODER: 4,
-  PONTOS: 0,
+  name: "Luigi",
+  speed: 3,
+  maneuverability: 4,
+  power: 4,
+  score: 0,
 };
 
 
-function rollDice(){
- return Math,floor( Math.random() * 6) + 1
+function rollDice() {
+  return Math, floor(Math.random() * 6) + 1
 }
 
+async function playRaceEngine(character1, character2) {
+  for (let round = 1; round <= 5; round++) {
+    console.log(`Rodada ${round}`)
+  }
+}
 
 (async function main() {
-   console.log('hello')
+  console.log(
+    `Corrida entre ${playerOne.name} e ${playerTwo.name} começand... \n`
+  )
+  await playRaceEngine(playerOne, playerTwo)
 })()
